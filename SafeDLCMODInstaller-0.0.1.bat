@@ -1,5 +1,16 @@
-chcp 65001 > nul
 @echo off
+if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
+bcdedit >nul
+if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
+:UACPrompt
+%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
+exit /B
+:UACAdmin
+cd /d "%~dp0"
+echo 当前运行路径是：%CD%
+echo 已获取管理员权限
+cls
+chcp 65001 > nul
 title SafeDLCMODInstaller
 echo ===================================
 echo =                                 =
@@ -69,47 +80,83 @@ pause >nul
 goto menu
 
 :option1
-echo 你选择了选项1
+echo 你选择了"1.0.0.1051 英文原始版"
+echo 正在运行脚本"inst_1051EN.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_1051EN.bat
 rem 这里添加选项1要执行的命令
 goto end
 
 :option2
-echo 你选择了选项2
+echo 你选择了"1.0.0.1051 英文解密版"
+echo 正在运行脚本"inst_1051Decrypted.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_1051Decrypted.bat
 rem 这里添加选项2要执行的命令
 goto end
 
 :option3
-echo 你选择了选项3
+echo 你选择了"1.2.0.1095 英文STEAM版"
+echo 正在运行脚本"inst_1095STEAM.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_1095STEAM.bat
 rem 这里添加选项3要执行的命令
 goto end
 
-:option3
-echo 你选择了选项4
+:option4
+echo 你选择了"1.0.0.1051 汉化第一版"
+echo 正在运行脚本"inst_1051CNV1.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_1051CNV1.bat
 rem 这里添加选项4要执行的命令
 goto end
 
-:option3
-echo 你选择了选项5
+:option5
+echo 你选择了"1.0.0.1051 汉化第二版"
+echo 正在运行脚本"inst_1051CNV2.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_1051CNV2.bat
 rem 这里添加选项5要执行的命令
 goto end
 
-:option3
-echo 你选择了选项6
+:option6
+echo 你选择了"1.2.0.1065 汉化第三版"
+echo 正在运行脚本"inst_1065CN.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_1065CN.bat
 rem 这里添加选项6要执行的命令
 goto end
 
-:option3
-echo 你选择了选项7
+:option7
+echo 你选择了"2010.08.02 年度中文版"
+echo 正在运行脚本"inst_GOTY2010CN.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_GOTY2010CN.bat
 rem 这里添加选项7要执行的命令
 goto end
 
-:option3
-echo 你选择了选项8
+:option8
+echo 你选择了"2012.06.05 年度加强版"
+echo 正在运行脚本"inst_GOTY2012V1.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_GOTY2012V1.bat
 rem 这里添加选项8要执行的命令
 goto end
 
-:option3
-echo 你选择了选项9
+:option9
+echo 你选择了"2012.07.17 年度加强版"
+echo 正在运行脚本"inst_GOTY2012V2.bat"
+timeout /t 5 > nul
+cd xdelta-2.2.1
+inst_GOTY2012V2.bat
 rem 这里添加选项9要执行的命令
 goto end
 

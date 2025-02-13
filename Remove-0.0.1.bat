@@ -29,10 +29,11 @@ echo(
 echo( 
 echo( 
 echo( 
-echo 若要移除“DLC模组2.2.1”相关安装文件 请按下 Enter 键
+echo( 若要删除“DLC模组2.2.1”相关安装文件 请按下 Enter 键
 echo( 
-echo 这不会删除你当前的游戏
+echo( 这不会删除你当前的游戏
 pause
 rmdir /s/q xdelta-2.2.1
 del Installer-0.0.1.bat
+del SafeDLCMODInstaller-0.0.1.exe
 del Remove-0.0.1.bat

@@ -29,11 +29,11 @@ echo(
 echo( 
 echo( 
 echo( 
-echo 若要安装“DLC模组2.2.1” 请按下 Enter 键
+echo( 若要安装“DLC模组2.2.1” 请按下 Enter 键
 pause
 cls
 mode con cols=120 lines=40
-echo( 请阅读完毕此窗口中的许可协议
+echo( = 请阅读完毕此窗口中的许可协议 =
 echo( 
 echo( 
 echo( 1 “DLC模组”免责声明
@@ -65,6 +65,8 @@ echo(
 echo( 如果您对本改版的合法使用有任何疑虑，我们建议您查看当地适用的法律条款和协议或寻求法律建议。感谢您尊重知识产权并通过使用游戏的合法拷贝来支持每一位创作者。
 echo( 
 echo( 
+echo( = 按下 Enter 键 以继续阅读 =
+echo( 
 pause
 cls
 echo( 
@@ -83,7 +85,7 @@ echo(
 echo( 
 echo( 
 echo( 
-echo( 感谢阅读 现在你可以按下 Enter 键 以继续安装
+echo( = 感谢阅读 现在你可以按下 Enter 键 以继续安装 =
 pause
 cls
 setlocal enabledelayedexpansion
@@ -104,7 +106,7 @@ echo( [4] 1.0.0.1051 汉化第一版 [5] 1.0.0.1051 汉化第二版 [6] 1.2.0.10
 echo( 
 echo( [7] 2010.08.02 年度中文版 [8] 2012.06.05 年度加强版 [9] 2012.07.17 年度加强版   
 echo( 
-echo( [0] 退出程序
+echo( [0] 退出程序             [R] 删除安装文件            
 echo( 
 echo( 
 echo.
@@ -120,17 +122,19 @@ if "%choice%" == "6" goto option6
 if "%choice%" == "7" goto option7
 if "%choice%" == "8" goto option8
 if "%choice%" == "9" goto option9
+if "%choice%" == "R" goto optionR
+if "%choice%" == "r" goto optionR
 if "%choice%" == "0" goto exit
 
 echo.
-echo 错误：无效的输入 [!]
-echo 请按 Enter 键重新输入...
+echo( 错误：无效的输入 [!]
+echo( 请按 Enter 键重新输入...
 pause >nul
 goto menu
 
 :option1
-echo 你选择了"1.0.0.1051 英文原始版"
-echo 正在运行脚本"inst_1051EN.bat"
+echo( 你选择了"1.0.0.1051 英文原始版"
+echo( 正在运行脚本"inst_1051EN.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_1051EN.bat
@@ -138,8 +142,8 @@ rem 这里添加选项1要执行的命令
 goto end
 
 :option2
-echo 你选择了"1.0.0.1051 英文解密版"
-echo 正在运行脚本"inst_1051Decrypted.bat"
+echo( 你选择了"1.0.0.1051 英文解密版"
+echo( 正在运行脚本"inst_1051Decrypted.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_1051Decrypted.bat
@@ -147,8 +151,8 @@ rem 这里添加选项2要执行的命令
 goto end
 
 :option3
-echo 你选择了"1.2.0.1095 英文STEAM版"
-echo 正在运行脚本"inst_1095STEAM.bat"
+echo( 你选择了"1.2.0.1095 英文STEAM版"
+echo( 正在运行脚本"inst_1095STEAM.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_1095STEAM.bat
@@ -156,8 +160,8 @@ rem 这里添加选项3要执行的命令
 goto end
 
 :option4
-echo 你选择了"1.0.0.1051 汉化第一版"
-echo 正在运行脚本"inst_1051CNV1.bat"
+echo( 你选择了"1.0.0.1051 汉化第一版"
+echo( 正在运行脚本"inst_1051CNV1.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_1051CNV1.bat
@@ -165,8 +169,8 @@ rem 这里添加选项4要执行的命令
 goto end
 
 :option5
-echo 你选择了"1.0.0.1051 汉化第二版"
-echo 正在运行脚本"inst_1051CNV2.bat"
+echo( 你选择了"1.0.0.1051 汉化第二版"
+echo( 正在运行脚本"inst_1051CNV2.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_1051CNV2.bat
@@ -174,8 +178,8 @@ rem 这里添加选项5要执行的命令
 goto end
 
 :option6
-echo 你选择了"1.2.0.1065 汉化第三版"
-echo 正在运行脚本"inst_1065CN.bat"
+echo( 你选择了"1.2.0.1065 汉化第三版"
+echo( 正在运行脚本"inst_1065CN.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_1065CN.bat
@@ -183,8 +187,8 @@ rem 这里添加选项6要执行的命令
 goto end
 
 :option7
-echo 你选择了"2010.08.02 年度中文版"
-echo 正在运行脚本"inst_GOTY2010CN.bat"
+echo( 你选择了"2010.08.02 年度中文版"
+echo( 正在运行脚本"inst_GOTY2010CN.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_GOTY2010CN.bat
@@ -192,8 +196,8 @@ rem 这里添加选项7要执行的命令
 goto end
 
 :option8
-echo 你选择了"2012.06.05 年度加强版"
-echo 正在运行脚本"inst_GOTY2012V1.bat"
+echo( 你选择了"2012.06.05 年度加强版"
+echo( 正在运行脚本"inst_GOTY2012V1.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_GOTY2012V1.bat
@@ -201,12 +205,16 @@ rem 这里添加选项8要执行的命令
 goto end
 
 :option9
-echo 你选择了"2012.07.17 年度加强版"
-echo 正在运行脚本"inst_GOTY2012V2.bat"
+echo( 你选择了"2012.07.17 年度加强版"
+echo( 正在运行脚本"inst_GOTY2012V2.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
 inst_GOTY2012V2.bat
 rem 这里添加选项9要执行的命令
+goto end
+
+:optionR
+Remove-0.0.1.bat
 goto end
 
 :exit

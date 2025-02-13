@@ -429,7 +429,7 @@ rmdir /s/q ..\drm
 del ..\Awesomium.dll
 del ..\BrowserLib.dll
 del ..\icudt38.dll
-del "Adobe Flash Player Plugin_11.3.exe"
+del ..\"Adobe Flash Player Plugin_11.3.exe"
 del ..\main.pak
 del ..\PlantsVsZombies.exe
 echo 应用安装

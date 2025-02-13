@@ -425,6 +425,7 @@ rmdir /s/q ..\particles
 rmdir /s/q ..\reanim
 rmdir /s/q ..\sounds
 rmdir /s/q ..\properties
+rmdir /s/q ..\drm
 del ..\Awesomium.dll
 del ..\BrowserLib.dll
 del ..\icudt38.dll

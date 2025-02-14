@@ -36,5 +36,5 @@ echo(
 pause
 rmdir /s/q xdelta-2.2.1
 del Installer-0.0.2.w7cn.bat
-del SafeDLCMODInstaller.w7cn-0.0.1.exe
+del SafeDLCMODInstaller.w7cn-0.0.2.exe
 del Remove-0.0.2.w7cn.bat

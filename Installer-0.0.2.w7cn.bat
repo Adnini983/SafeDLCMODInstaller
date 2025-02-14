@@ -157,7 +157,7 @@ echo( 你选择了"1.2.0.1095 英文STEAM版"
 echo( 正在运行脚本"inst_1095STEAM.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_1095STEAM.bat
+inst_1095STEAM.w7cn.bat
 rem 这里添加选项3要执行的命令
 goto end
 
@@ -166,7 +166,7 @@ echo( 你选择了"1.0.0.1051 汉化第一版"
 echo( 正在运行脚本"inst_1051CNV1.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_1051CNV1.bat
+inst_1051CNV1.w7cn.bat
 rem 这里添加选项4要执行的命令
 goto end
 
@@ -175,7 +175,7 @@ echo( 你选择了"1.0.0.1051 汉化第二版"
 echo( 正在运行脚本"inst_1051CNV2.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_1051CNV2.bat
+inst_1051CNV2.w7cn.bat
 rem 这里添加选项5要执行的命令
 goto end
 
@@ -184,7 +184,7 @@ echo( 你选择了"1.2.0.1065 汉化第三版"
 echo( 正在运行脚本"inst_1065CN.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_1065CN.bat
+inst_1065CN.w7cn.bat
 rem 这里添加选项6要执行的命令
 goto end
 
@@ -193,7 +193,7 @@ echo( 你选择了"2010.08.02 年度中文版"
 echo( 正在运行脚本"inst_GOTY2010CN.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_GOTY2010CN.bat
+inst_GOTY2010CN.w7cn.bat
 rem 这里添加选项7要执行的命令
 goto end
 
@@ -202,7 +202,7 @@ echo( 你选择了"2012.06.05 年度加强版"
 echo( 正在运行脚本"inst_GOTY2012V1.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_GOTY2012V1.bat
+inst_GOTY2012V1.w7cn.bat
 rem 这里添加选项8要执行的命令
 goto end
 
@@ -211,7 +211,7 @@ echo( 你选择了"2012.07.17 年度加强版"
 echo( 正在运行脚本"inst_GOTY2012V2.w7cn.bat"
 timeout /t 5 > nul
 cd xdelta-2.2.1
-inst_GOTY2012V2.bat
+inst_GOTY2012V2.w7cn.bat
 rem 这里添加选项9要执行的命令
 goto end
 

@@ -1,4 +1,4 @@
-chcp 65001 > nul
+chcp 936 > nul
 @echo off
 if exist "%SystemRoot%\SysWOW64" path %path%;%windir%\SysNative;%SystemRoot%\SysWOW64;%~dp0
 bcdedit >nul
@@ -8,8 +8,8 @@ if '%errorlevel%' NEQ '0' (goto UACPrompt) else (goto UACAdmin)
 exit /B
 :UACAdmin
 cd /d "%~dp0"
-echo å½“å‰è¿è¡Œè·¯å¾„æ˜¯ï¼š%CD%
-echo å·²è·å–ç®¡ç†å‘˜æƒé™
+echo µ±Ç°ÔËĞĞÂ·¾¶ÊÇ£º%CD%
+echo ÒÑ»ñÈ¡¹ÜÀíÔ±È¨ÏŞ
 cls
 title SafeDLCMODInstaller
 echo ===================================
@@ -29,11 +29,12 @@ echo(
 echo( 
 echo( 
 echo( 
-echo( è‹¥è¦åˆ é™¤â€œDLCæ¨¡ç»„2.2.1â€ç›¸å…³å®‰è£…æ–‡ä»¶ è¯·æŒ‰ä¸‹ Enter é”®
+echo( ÈôÒªÉ¾³ı¡°DLCÄ£×é2.2.1¡±Ïà¹Ø°²×°ÎÄ¼ş Çë°´ÏÂ Enter ¼ü
 echo( 
-echo( è¿™ä¸ä¼šåˆ é™¤ä½ å½“å‰çš„æ¸¸æˆ
+echo( Õâ²»»áÉ¾³ıÄãµ±Ç°µÄÓÎÏ·
+echo( 
 pause
 rmdir /s/q xdelta-2.2.1
-del Installer-0.0.2.bat
-del SafeDLCMODInstaller-0.0.2.exe
-del Remove-0.0.2.bat
+del Installer-0.0.2.w7cn.bat
+del SafeDLCMODInstaller.w7cn-0.0.1.exe
+del Remove-0.0.2.w7cn.bat

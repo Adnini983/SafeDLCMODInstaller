@@ -30,6 +30,7 @@ echo(
 echo( 
 echo( 
 echo( 若要安装“DLC模组2.2.1” 请按下 Enter 键
+echo( 
 pause
 cls
 mode con cols=120 lines=40
@@ -86,6 +87,7 @@ echo(
 echo( 
 echo( 
 echo( = 感谢阅读 现在你可以按下 Enter 键 以继续安装 =
+echo( 
 pause
 cls
 setlocal enabledelayedexpansion
@@ -214,7 +216,7 @@ rem 这里添加选项9要执行的命令
 goto end
 
 :optionR
-Remove-0.0.1.bat
+Remove-0.0.2.bat
 goto end
 
 :exit

@@ -4,3 +4,5 @@
 使用方法：解压至“植物大战僵尸”原版游戏的安装目录内，运行“Installer-0.0.1.bat”以开始安装。
 
 包含第三方开源项目：[xdelta-gpl](https://github.com/jmacd/xdelta-gpl)
+
+包含游戏二进制数据：[PVZ:DLCMOD](discord.gg/rTz2QHD9aR)

@@ -5,4 +5,4 @@
 
 包含第三方开源项目：[xdelta-gpl](https://github.com/jmacd/xdelta-gpl)
 
-包含游戏二进制数据：[PVZ: DLCMOD](discord.gg/rTz2QHD9aR)
+包含游戏二进制数据：[PVZ: DLCMOD](https://discord.gg/rTz2QHD9aR)
